@@ -1,0 +1,37 @@
+@import './colors';
+
+
+body {
+  font-family: "verdana", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: $c-white;
+}
+
+a:hover {
+  color: $c-red-dark;
+}
+
+p {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+h1 {
+  margin: 15px 0;
+  font-size: 30px;
+  font-weight: 700;
+
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 24px;
+  margin: 15px 0;
+  min-height: 40px;
+}
