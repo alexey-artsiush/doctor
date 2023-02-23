@@ -7,10 +7,6 @@ a {
   color: #ffffff;
 }
 
-a:hover {
-  color: #9a021b;
-}
-
 p {
   font-weight: 200;
   font-size: 15px;
@@ -476,7 +472,59 @@ textarea {
 }
 
 .intro {
+  width: 100%;
   height: 100vh;
   background-image: url("/src/img/main/cta-bg.webp");
-  color: red;
+}
+.intro .wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.intro .wrapper .intro-form {
+  text-transform: uppercase;
+}
+.intro .wrapper .wrapper-main {
+  display: flex;
+  flex-wrap: wrap;
+  bottom: 0;
+  position: absolute;
+}
+.intro .header {
+  margin-top: 60px;
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F8D8C3;
+}
+.intro .header a {
+  color: #9d9d9d;
+  text-decoration: none;
+}
+.intro .header a:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  color: #ffffff;
+}
+.intro .header-logo {
+  margin: 0 20px;
+  width: 180px;
+}
+.intro .header-logo img {
+  max-width: 100%;
+}
+.intro .header-nav {
+  display: flex;
+  align-items: center;
+}
+.intro .header-nav li {
+  font-size: 20px;
+  margin: 0 15px;
+}
+.intro .doktor {
+  display: flex;
+  align-items: end;
 }/*# sourceMappingURL=index.css.map */

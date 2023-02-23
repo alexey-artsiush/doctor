@@ -1,5 +1,71 @@
 .intro {
+    .wrapper {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .intro-form {
+            text-transform: uppercase;
+        }
+
+        .wrapper-main {
+            display: flex;
+            flex-wrap: wrap;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+
+    width: 100%;
     height: 100vh;
     background-image: url('/src/img/main/cta-bg.webp');
-    color: red;
+
+    .header {
+        margin-top: 60px;
+        position: absolute;
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: $c-brown-1;
+
+        a {
+            color: $c-grey-1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            cursor: pointer;
+            transition: 0.3s;
+            color: $c-white;
+        }
+    }
+
+
+    .header-logo {
+        margin: 0 20px;
+        width: 180px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+
+        li {
+            font-size: 20px;
+            margin: 0 15px;
+        }
+    }
+
+    .doktor {
+        display: flex;
+        align-items: end;
+    }
+
+
 }
