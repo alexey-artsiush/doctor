@@ -1,5 +1,5 @@
 body {
-  font-family: "verdana", sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 300;
 }
 
@@ -473,23 +473,100 @@ textarea {
 
 .intro {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   background-image: url("/src/img/main/cta-bg.webp");
 }
+.intro .intro-services {
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.intro .intro-services .intro-services__left {
+  display: flex;
+  margin: 8px 0 0 20px;
+}
+.intro .intro-services .intro-services__left a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a0a14;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.intro .intro-services .intro-services__left a:first-of-type {
+  margin: auto 5px;
+}
+.intro .intro-services .intro-services__left img {
+  max-height: 100%;
+}
 .intro .wrapper {
+  height: 100%;
   max-width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
+.intro .wrapper .doktor {
+  max-width: 60%;
+  margin-right: 10%;
+}
 .intro .wrapper .intro-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  max-width: 40%;
   text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.intro .wrapper .intro-form h1 {
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #5c5c5c;
+}
+.intro .wrapper .intro-form h2 {
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #5c5c5c;
+}
+.intro .wrapper .intro-form h3 {
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #AE7957;
+}
+.intro .wrapper .intro-form .button-contact {
+  margin: 10px 0;
+  background: linear-gradient(to bottom right, #F8D8C3 1.08%, #b68768 99.94%);
+  box-shadow: 0px 4px 30px #F8D8C3;
+  border-radius: 5px;
+  padding: 15px 80px;
+  border: 0px solid #AE7957;
+  width: 100%;
+  color: #AE7957;
+  font-weight: 600;
+}
+.intro .wrapper .intro-form input {
+  border: none;
+  margin: 7px 0;
+  padding: 15px;
+  border-radius: 5px;
+}
+.intro .wrapper .intro-form input:first-of-type {
+  margin-top: 30px;
 }
 .intro .wrapper .wrapper-main {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  bottom: 0;
-  position: absolute;
 }
 .intro .header {
   margin-top: 60px;
@@ -527,4 +604,9 @@ textarea {
 .intro .doktor {
   display: flex;
   align-items: end;
+}
+
+.intro-video {
+  background-color: #F8D8C3;
+  height: 25vh;
 }/*# sourceMappingURL=index.css.map */
