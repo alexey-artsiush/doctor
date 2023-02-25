@@ -1,0 +1,31 @@
+.clinic {
+    background: $c-white url(/src/img/main/bg-about.webp) no-repeat left;
+    margin: 35px 0;
+    padding: 60px 0;
+
+    .wrapper {
+        height: 100%;
+        max-width: 80%;
+        margin: 0 auto 100px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .clinic-img {
+            width: 40%;
+            margin-right: 10%;
+        }
+
+        .clinic-text {
+            width: 50%;
+        }
+    }
+
+    h2 {
+        font-weight: 700;
+    }
+
+    .wrapper-btn {
+        display: flex;
+        justify-content: end;
+    }
+}

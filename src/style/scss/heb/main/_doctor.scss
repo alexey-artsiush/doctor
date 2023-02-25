@@ -1,0 +1,40 @@
+.doctor {
+    width: 100%;
+    background-color: $c-brown-1;
+
+    h2 {
+        font-weight: 700;
+    }
+
+    .wrapper {
+        max-width: 80%;
+        padding: 50px 0;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .doctor-text {
+            width: 50%;
+        }
+
+        .doctor-img {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                max-width: 100%;
+                margin: 10px 0 10px 5%;
+            }
+        }
+
+        .doctor-subscribe {
+            display: flex;
+            justify-content: end;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}

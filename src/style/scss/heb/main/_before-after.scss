@@ -1,0 +1,15 @@
+@import "../_basic.scss";
+
+.before-after {
+    .before-after-text {
+        width: 50%;
+    }
+
+    .before-after-img {
+        width: 50%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

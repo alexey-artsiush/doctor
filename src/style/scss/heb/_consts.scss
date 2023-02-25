@@ -4,16 +4,16 @@
 body {
   font-family: arial, sans-serif;
   font-weight: 300;
+  color: $c-brown;
 }
 
 a {
   color: $c-white;
 }
 
-
 p {
+  font-size: 17px;
   font-weight: 200;
-  font-size: 15px;
   line-height: 24px;
   margin-bottom: 30px;
   font-weight: 500;

@@ -1,33 +1,3 @@
-body {
-  font-family: arial, sans-serif;
-  font-weight: 300;
-}
-
-a {
-  color: #ffffff;
-}
-
-p {
-  font-weight: 200;
-  font-size: 15px;
-  line-height: 24px;
-  margin-bottom: 30px;
-  font-weight: 500;
-}
-
-h1 {
-  margin: 15px 0;
-  font-size: 30px;
-  font-weight: 700;
-}
-
-h2 {
-  font-weight: 800;
-  font-size: 24px;
-  margin: 15px 0;
-  min-height: 40px;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -471,9 +441,62 @@ textarea {
   padding: 0.2em 0;
 }
 
+body {
+  font-family: arial, sans-serif;
+  font-weight: 300;
+  color: #AE7957;
+}
+
+a {
+  color: #ffffff;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 200;
+  line-height: 24px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+h1 {
+  margin: 15px 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 24px;
+  margin: 15px 0;
+  min-height: 40px;
+}
+
+.button {
+  color: #AE7957;
+  background-color: transparent;
+  border: 2px solid #AE7957;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 600;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.button a {
+  text-decoration: none;
+  color: #AE7957;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .intro {
   width: 100%;
-  height: 75vh;
+  height: 90vh;
   background-image: url("/src/img/main/cta-bg.webp");
 }
 .intro .intro-services {
@@ -486,6 +509,7 @@ textarea {
 .intro .intro-services .intro-services__left {
   display: flex;
   margin: 8px 0 0 20px;
+  width: 50%;
 }
 .intro .intro-services .intro-services__left a {
   font-size: 20px;
@@ -494,28 +518,46 @@ textarea {
   text-decoration: none;
   margin-right: 5px;
 }
+.intro .intro-services .intro-services__left a:last-child {
+  margin-top: -3px;
+  height: 37px;
+}
 .intro .intro-services .intro-services__left a:first-of-type {
   margin: auto 5px;
 }
 .intro .intro-services .intro-services__left img {
   max-height: 100%;
 }
+.intro .intro-services .intro-services__right {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+.intro .intro-services .intro-services__right a {
+  color: #AE7957;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 7px 15px;
+  box-shadow: 0px 2px 8px #ac987b;
+}
 .intro .wrapper {
   height: 100%;
-  max-width: 80%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 .intro .wrapper .doktor {
-  max-width: 60%;
+  width: 50%;
   margin-right: 10%;
 }
 .intro .wrapper .intro-form {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  max-width: 40%;
+  width: 40%;
   text-transform: uppercase;
   margin-bottom: 50px;
 }
@@ -608,5 +650,104 @@ textarea {
 
 .intro-video {
   background-color: #F8D8C3;
-  height: 25vh;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-video iframe {
+  border-radius: 15px;
+}
+
+.clinic {
+  background: #ffffff url(/src/img/main/bg-about.webp) no-repeat left;
+  margin: 35px 0;
+  padding: 60px 0;
+}
+.clinic .wrapper {
+  height: 100%;
+  max-width: 80%;
+  margin: 0 auto 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.clinic .wrapper .clinic-img {
+  width: 40%;
+  margin-right: 10%;
+}
+.clinic .wrapper .clinic-text {
+  width: 50%;
+}
+.clinic h2 {
+  font-weight: 700;
+}
+.clinic .wrapper-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.doctor {
+  width: 100%;
+  background-color: #F8D8C3;
+}
+.doctor h2 {
+  font-weight: 700;
+}
+.doctor .wrapper {
+  max-width: 80%;
+  padding: 50px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.doctor .wrapper .doctor-text {
+  width: 50%;
+}
+.doctor .wrapper .doctor-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.doctor .wrapper .doctor-img img {
+  max-width: 100%;
+  margin: 10px 0 10px 5%;
+}
+.doctor .wrapper .doctor-subscribe {
+  display: flex;
+  justify-content: end;
+}
+.doctor .wrapper .doctor-subscribe img {
+  margin-right: 10px;
+}
+
+.button {
+  color: #AE7957;
+  background-color: transparent;
+  border: 2px solid #AE7957;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 600;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.button a {
+  text-decoration: none;
+  color: #AE7957;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.before-after .before-after-text {
+  width: 50%;
+}
+.before-after .before-after-img {
+  width: 50%;
+}
+.before-after .before-after-img img {
+  max-width: 100%;
 }/*# sourceMappingURL=index.css.map */

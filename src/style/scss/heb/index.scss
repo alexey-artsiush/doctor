@@ -1,4 +1,8 @@
+@import './reset';
 @import './colors';
 @import './consts';
-@import './reset';
-@import './main/intro.scss';
+@import './basic';
+@import './main/intro';
+@import './main/clinic';
+@import './main/doctor';
+@import './main/before-after';
