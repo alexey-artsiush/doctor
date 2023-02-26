@@ -455,7 +455,7 @@ p {
   font-size: 17px;
   font-weight: 200;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 
@@ -492,6 +492,10 @@ h2 {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+}
+
+.hide {
+  display: none;
 }
 
 .intro {
@@ -549,7 +553,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
-.intro .wrapper .doktor {
+.intro .wrapper .intro-img {
+  display: flex;
   width: 50%;
   margin-right: 10%;
 }
@@ -643,12 +648,13 @@ h2 {
   font-size: 20px;
   margin: 0 15px;
 }
-.intro .doktor {
+.intro .doctor {
   display: flex;
   align-items: end;
 }
 
 .intro-video {
+  padding: 7vh;
   background-color: #F8D8C3;
   height: 45vh;
   display: flex;
@@ -660,9 +666,9 @@ h2 {
 }
 
 .clinic {
-  background: #ffffff url(/src/img/main/bg-about.webp) no-repeat left;
-  margin: 35px 0;
-  padding: 60px 0;
+  background: #ffffff url(/src/img/main/bg-about.webp) no-repeat left top;
+  margin-top: 120px;
+  padding-top: 110px 0;
 }
 .clinic .wrapper {
   height: 100%;
@@ -674,6 +680,10 @@ h2 {
 .clinic .wrapper .clinic-img {
   width: 40%;
   margin-right: 10%;
+  margin-top: -40px;
+}
+.clinic .wrapper .clinic-img img {
+  width: 100%;
 }
 .clinic .wrapper .clinic-text {
   width: 50%;
@@ -742,12 +752,136 @@ h2 {
   flex-wrap: wrap;
 }
 
+.hide {
+  display: none;
+}
+
+.before-after {
+  margin: 70px 0;
+  padding: 70px 0;
+}
 .before-after .before-after-text {
-  width: 50%;
+  width: 45%;
+  padding-left: 5%;
 }
 .before-after .before-after-img {
   width: 50%;
 }
 .before-after .before-after-img img {
   max-width: 100%;
+}
+
+.lazer {
+  background-color: #F8D8C3;
+  margin: 70px 0;
+  padding: 70px 0;
+}
+.lazer .lazer-text {
+  width: 50%;
+}
+.lazer .lazer-img {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+.lazer .lazer-img img {
+  max-width: 100%;
+}
+
+.diploms {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 0;
+  padding: 70px 0;
+}
+.diploms img {
+  width: 20%;
+}
+
+.feedback {
+  padding: 80px 0px;
+  background: url("/src/img/main/contact-bg.webp") no-repeat center;
+  background-size: cover;
+}
+.feedback .feedback-form {
+  width: 45%;
+  margin: 30px;
+}
+.feedback .feedback-form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+}
+.feedback .feedback-form .button {
+  margin: 10px -30px 0 15px;
+  background: linear-gradient(90.45deg, #5c5c5c 0.08%, #727272 99.94%);
+  box-shadow: 0px 4px 30px #ae7957;
+  border-radius: 5px;
+  padding: 15px 80px;
+  border: 0px solid #AE7957;
+  color: #ffffff;
+}
+.feedback .feedback-form .button:hover {
+  color: #AE7957;
+}
+.feedback .feedback-form .btn-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.footer {
+  background-color: #424242;
+  color: #ffffff;
+  padding: 30px 0px 30px 0px;
+}
+.footer .footer-logo {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-logo img {
+  max-width: 100%;
+}
+.footer .footer-contact {
+  width: 35%;
+}
+.footer .footer-contact a {
+  text-decoration: none;
+}
+
+.copy {
+  background-color: #313131;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+.copy p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.page-clinic .intro {
+  background-image: none;
+  height: 10vh;
+}
+.page-clinic .clinic-about {
+  margin-top: 70px;
+}
+.page-clinic .lazer {
+  margin: 0;
+}
+.page-clinic .diploms img {
+  max-width: 100%;
+}
+
+.page-doctor .intro {
+  background-image: none;
+}
+.page-doctor .swiper {
+  width: 600px;
+  height: 300px;
 }/*# sourceMappingURL=index.css.map */

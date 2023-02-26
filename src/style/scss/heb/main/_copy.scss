@@ -1,0 +1,12 @@
+.copy {
+    background-color: $c-black-light;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    color: $c-white;
+
+    p {
+        font-size: 15px;
+        margin: 0;
+    }
+}

@@ -8,7 +8,7 @@
     <meta name="description" content=קליניקה לרפואה אס.מגוון פתרונות לבריאות ויופי שלכםתטית>
     <meta name="author" content="">
     <meta property="og:title" content="DR BRAILOVSKI | Главная" />
-    <link href="src/style/css/index.min.css" rel="stylesheet">
+    <link href="/src/style/css/index.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,16 +32,18 @@
                 <img src="/src/img/main/logo.webp" alt="logo">
             </div>
             <ul class="header-nav">
-                <li><a href="/">Главная</a></li>
-                <li><a href="/clinik">Клиника</a></li>
-                <li><a href="/doktors">Доктора</a> </li>
-                <li><a href="/lazer">О лазере</a></li>
-                <li><a href="/proced">Процедуры</a></li>
-                <li><a href="/proced">Контакты</a></li>
+                <li><a href="/ru">Главная</a></li>
+                <li><a href="/ru/clinic">Клиника</a></li>
+                <li><a href="/ru/doсtor">Доктора</a> </li>
+                <li><a href="/ru/lazer">О лазере</a></li>
+                <li><a href="/ru/proced">Процедуры</a></li>
+                <li><a href="/ru/contact">Контакты</a></li>
         </div>
         <div class="wrapper">
             <div class="wrapper-main">
-                <img class="doktor" src="/src/img/main/title.webp" alt="doktor">
+                <div class="intro-img">
+                    <img class="doctor" src="/src/img/main/title.webp" alt="doctor">
+                </div>
                 <form class="intro-form" action="">
                     <h1>Клиника эсетической медицины</h1>
                     <h3>Разнообразие решений для вашей красоты</h3>
@@ -67,9 +69,6 @@
 
     <section class="clinic">
         <div class="wrapper">
-            <div class="clinic-img">
-                <img src="/src/img/main/woman-about.webp" alt="doctors">
-            </div>
             <div class="clinic-text">
                 <div class="">
                     <h2>DR.BRAILOVSKI – клиника эстетической медицины и косметологии в Беэр-Шеве</h2>
@@ -87,6 +86,9 @@
                         <a href="/ru/klinika.html">О клинике ></a>
                     </button>
                 </div>
+            </div>
+            <div class="clinic-img">
+                <img src="/src/img/main/woman-about.webp" alt="doctors">
             </div>
         </div>
         </div>
@@ -152,18 +154,61 @@
                     терапевтических лазерных процедур, направленных на омоложение и лечение кожи, коррекцию
                     косметических дефектов лица и тела.
                 </p>
-                <p><a href="/ru/o-lazere.html" class="btn btn-primary">Подробнее ></a>
-                </p>
+                <button class="button">
+                    <a href="/ru/klinika.html">Подробнее ></a>
+                </button>
             </div>
-
+            <div class="lazer-img">
+                <img src="../src/img/main/lazer.webp" alt="lazer">
+            </div>
         </div>
-        <div class="lazer-img">
-            <img src=" src/img/main/lazer.webp" alt="lazer">
+
+    </section>
+
+    <section class="diploms">
+        <div class="wrapper">
+            <img src="/src/img/main/diplom1.webp" alt="diplom">
+            <img src="/src/img/main/diplom2.webp" alt="diplom">
+            <img src="/src/img/main/diplom3.webp" alt="diplom">
+            <img src="/src/img/main/diplom4.webp" alt="diplom">
+            <img src="/src/img/main/diplom5.webp" alt="diplom">
         </div>
     </section>
-    <section class="diploms"></section>
-    <section class="feedback"></section>
-    <footer class="footer"></footer>
+
+    <section class="feedback">
+        <div class="feedback-form">
+            <p>Оставьте свои контактные данные, чтобы наши специалисты смогли с Вами связаться</p>
+            <form class="form" id="contactForm" method="post" action="https://ab-aesthetics.co.il/ru/">
+                <input type="text" class="form-control" id="name" value="" name="name" placeholder="Имя" required="">
+                <input type="email" class="form-control" id="email" name="email" value="" placeholder="Email"
+                    required="">
+                <input type="nubmer" class="form-control" id="mobile" name="phone" value="" placeholder="Номер телефона"
+                    required="">
+                <div class="btn-wrapper">
+                    <button type="submit" id="submit" name="submit" class="button">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="wrapper">
+            <div class="footer-contact">
+                <p>DR.BRAILOVSKI<br>клиника эстетической медицины и косметологии в Беэр-Шеве</p>
+                <p><img src="src/img/map-icon.png" class="little" alt="">Израиль, Беэр Шева, Бехор Шитрит, 49 </p>
+                <p><img src="src/img/phone-icon.png" class="little" alt=""><a href="tel:055-966-1272 ">055-966-1272</a>
+                </p>
+            </div>
+            <div class="footer-logo">
+                <img src="../src/img/footer-logo.png" class="footer-logo">
+            </div>
+    </section>
+
+    <div class="copy">
+        <div class="copy-info">
+            <p>DR.BRAILOVSKI Все права защищены 2022-2023 ©</p>
+        </div>
+    </div>
 </body>
 
 </html>

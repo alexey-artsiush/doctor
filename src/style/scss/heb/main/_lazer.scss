@@ -1,0 +1,19 @@
+.lazer {
+    background-color: $c-brown-1;
+    margin: 70px 0;
+    padding: 70px 0;
+
+    .lazer-text {
+        width: 50%;
+    }
+
+    .lazer-img {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
