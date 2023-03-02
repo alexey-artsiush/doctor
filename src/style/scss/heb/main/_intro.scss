@@ -1,7 +1,7 @@
 .intro {
     width: 100%;
-    height: 90vh;
-    background-image: url('/src/img/main/cta-bg.webp');
+    height: 85vh;
+    background-image: url('../../img/main/cta-bg.webp');
 
     .intro-services {
         position: absolute;
@@ -34,6 +34,7 @@
 
             img {
                 max-height: 100%;
+                height: fit-content;
             }
         }
 
@@ -129,7 +130,7 @@
         }
 
         .wrapper-main {
-            margin-top: 50px;
+            margin-top: 25vh;
             display: flex;
             flex-wrap: wrap;
         }
@@ -182,7 +183,7 @@
 }
 
 .intro-video {
-    padding: 7vh;
+    padding: 12vh;
     background-color: $c-brown-1;
     height: 45vh;
     display: flex;
