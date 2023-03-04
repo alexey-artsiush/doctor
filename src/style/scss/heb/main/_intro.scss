@@ -3,6 +3,10 @@
     height: 85vh;
     background-image: url('../../img/main/cta-bg.webp');
 
+    @media (max-width: 970px) {
+        height: 105vh;
+    }
+
     .intro-services {
         position: absolute;
         height: 40px;
@@ -62,12 +66,30 @@
         width: 80%;
         margin: 0 auto;
         display: flex;
-        flex-wrap: wrap;
+
+        @media (max-width: 1250px) {
+            width: 95%;
+        }
+
+        @media (max-width: 970px) {
+            flex-wrap: wrap;
+        }
 
         .intro-img {
             display: flex;
             width: 50%;
             margin-right: 10%;
+
+            @media (max-width: 970px) {
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                max-width: 100%;
+            }
         }
 
         .intro-form {
@@ -78,6 +100,11 @@
             text-transform: uppercase;
             margin-bottom: 50px;
 
+            @media (max-width: 970px) {
+                width: 55%;
+                margin: 30px auto;
+            }
+
             h1 {
                 margin-top: 0px;
                 padding-top: 0px;
@@ -85,6 +112,10 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 color: $c-grey-2;
+
+                @media (max-width: 970px) {
+                    display: none;
+                }
             }
 
             h2 {
@@ -103,6 +134,10 @@
                 font-weight: 600;
                 text-transform: uppercase;
                 color: $c-brown;
+
+                @media (max-width: 970px) {
+                    display: none;
+                }
             }
 
             .button-contact {
@@ -130,9 +165,13 @@
         }
 
         .wrapper-main {
-            margin-top: 25vh;
+            margin-top: 21vh;
             display: flex;
             flex-wrap: wrap;
+
+            @media (max-width: 970px) {
+                margin-top: 5vh;
+            }
         }
     }
 
@@ -142,8 +181,14 @@
         width: 100%;
         padding: 20px 0;
         display: flex;
+        align-items: center;
         justify-content: space-between;
         background-color: $c-brown-1;
+
+        @media (max-width: 970px) {
+            flex-direction: row-reverse;
+            padding: 10px 0;
+        }
 
         a {
             color: $c-grey-1;
@@ -161,6 +206,10 @@
         margin: 0 20px;
         width: 180px;
 
+        @media (max-width: 970px) {
+            width: 220px;
+        }
+
         img {
             max-width: 100%;
         }
@@ -170,9 +219,22 @@
         display: flex;
         align-items: center;
 
+        @media (max-width: 970px) {
+            display: none;
+        }
+
         li {
             font-size: 20px;
             margin: 0 15px;
+        }
+
+    }
+
+    .hamburger-menu {
+        display: none;
+
+        @media (max-width: 970px) {
+            display: initial;
         }
     }
 
@@ -189,8 +251,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 
     iframe {
-        border-radius: 15px
+        border-radius: 15px;
+        max-width: 100%;
+    }
+
+    @media (max-width: 970px) {
+        padding: 12vh 0;
     }
 }
