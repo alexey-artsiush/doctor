@@ -23,13 +23,11 @@
                     <img src="../src/img/main/icon/fb-top.png" alt="facebook-logo">
                 </a>
             </div>
-            <div class="intro-services__right">
-                <a class="intro-services__phone" href="tel:055-966-1272 ">✆ 055-966-1272</button>
-            </div>
+
         </div>
         <div class="header">
             <div class="header-logo">
-                <img src="../src/img/main/logo.webp" alt="logo">
+                <a href="/ru/"><img src="../src/img/main/logo.webp" alt="logo"></a>
             </div>
             <ul class="header-nav">
                 <li><a href="/doctor/ru/">Главная</a></li>
@@ -60,13 +58,63 @@
                 <div class="intro-img">
                     <img src="../src/img/main/title.webp" alt="doctor">
                 </div>
-                <form class="intro-form" action="">
+
+                <form action="contact.php" name="form" method="POST">
+                    <div class="input-box">
+                        <input type="text" placeholder="Ваше имя" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$" />
+                        <label for="name">Только русские буквы</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Введите email" name="email" id="email"
+                            data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" />
+                        <label for="email">В формате: your-name@email.com</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Введите телефон" name="phone" id="phone"
+                            data-reg="^((\+7|7|8)+([0-9]){10})$" />
+                        <label for="phone">В формате: 88000000000 или 78000000000</label>
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea placeholder="Сообщение" name="message"></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="submit" id="button" value="Отправить" />
+                    </div>
+                </form>
+
+                <!-- <form class="intro-form" action="/src/js/contact.php" method="POST">
                     <h1>Клиника эсетической медицины</h1>
                     <h3>Разнообразие решений для вашей красоты</h3>
                     <h2>Др. Браиловский - ключ к красоте</h2>
                     <input class="input" type="text" placeholder="Номер телефона">
                     <input class="input" type="phone" placeholder="Имя">
                     <button class="button-contact">СВЯЖИТЕСЬ С НАМИ</button>
+                </form> -->
+
+                <form method="post" action="contact.php" name="form">
+
+                    <h3>Данные с формы обратной связи</h3>
+                    <p>Имя: %name%</p>
+                    <p>Email: %email%</p>
+                    <p>Телефон: %phone%</p>
+                    <p>Сообщение: %message%</p>
+
+
+                    <!-- <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" required>
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" required></textarea> -->
+
+                    <br>
+
+                    <button>Send</button>
                 </form>
             </div>
         </div>
@@ -216,7 +264,7 @@
                 </p>
             </div>
             <div class="footer-logo">
-                <img src="../src/img/footer-logo.png" class="footer-logo">
+                <a href="/ru/"><img src="../src/img/footer-logo.png" class="footer-logo"></a>
             </div>
     </section>
 
@@ -225,6 +273,7 @@
             <p>DR.BRAILOVSKI Все права защищены 2022-2023 ©</p>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>

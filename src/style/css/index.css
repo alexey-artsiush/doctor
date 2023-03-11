@@ -493,6 +493,11 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 1250px) {
+  .wrapper {
+    width: 95%;
+  }
+}
 
 .hide {
   display: none;
@@ -555,14 +560,8 @@ h2 {
 }
 .intro .wrapper {
   height: 100%;
-  width: 80%;
   margin: 0 auto;
   display: flex;
-}
-@media (max-width: 1250px) {
-  .intro .wrapper {
-    width: 95%;
-  }
 }
 @media (max-width: 970px) {
   .intro .wrapper {
@@ -595,7 +594,7 @@ h2 {
 }
 @media (max-width: 970px) {
   .intro .wrapper .intro-form {
-    width: 55%;
+    width: 80%;
     margin: 30px auto;
   }
 }
@@ -835,6 +834,11 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 1250px) {
+  .wrapper {
+    width: 95%;
+  }
+}
 
 .hide {
   display: none;
@@ -943,6 +947,7 @@ h2 {
 }
 .footer .footer-logo img {
   max-width: 100%;
+  width: 100%;
 }
 .footer .footer-contact {
   width: 35%;
@@ -986,10 +991,6 @@ h2 {
 }
 .page-doctor .intro .wrapper {
   display: none;
-}
-.page-doctor .swiper {
-  width: 600px;
-  height: 300px;
 }
 
 .page-lazer .intro {
@@ -1159,4 +1160,23 @@ h2 {
 
 .menu__item {
   transition-duration: 0.25s;
+}
+
+.swiper {
+  width: 1100px;
+  height: 300px;
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  top: 35%;
+}
+.swiper .swiper-pagination-bullet {
+  bottom: 0;
+}
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  font-size: 12px;
+  background-color: #AE7957;
 }/*# sourceMappingURL=index.css.map */
